@@ -5,6 +5,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { useAuth } from './context/useAuth';
 import AdminLayout from './layouts/AdminLayout';
+import CategoriesPage from './pages/CategoriesPage';
 import DashboardPage from './pages/DashboardPage';
 import LoginPage from './pages/LoginPage';
 import PlaceholderPage from './pages/PlaceholderPage';
@@ -39,7 +40,7 @@ function AppRoutes() {
         <Route path="/pos" element={<PlaceholderPage title="POS" />} />
         <Route path="/orders" element={<PlaceholderPage title="Orders" />} />
         <Route path="/products" element={<PlaceholderPage title="Products" />} />
-        <Route path="/categories" element={<PlaceholderPage title="Categories" />} />
+        <Route path="/categories" element={<CategoriesPage />} />
         <Route path="/inventory" element={<PlaceholderPage title="Inventory" />} />
         <Route path="/customers" element={<PlaceholderPage title="Customers" />} />
         <Route path="/employees" element={<PlaceholderPage title="Employees" />} />
